@@ -1,0 +1,246 @@
+/* all, screen, print, speech;
+not, only; ,=or, and=both;
+orientation: landscape; - <1024
+
+! 1280; 1152; 800 
+
+@media screen and (max-width: 768px) {} */
+
+@media (max-width: 1280px) {
+
+    .audience .container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px 0;
+    }
+
+    .aud-header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .promo {
+        /*background-size: 60%;*/
+        background-position: 85% 220px;
+    }  
+
+}
+
+
+@media (max-width: 1024px) {      
+
+    .comm-title, .comm-text {
+        max-width: 350px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .promo {
+        background-size: 70%;
+        background-position: 90% 350px;
+    }
+
+    .nav-toggle {
+        display: inline-block;
+    }
+
+    .nav-menu,
+    .nav-toggle::after {
+        display: none;
+    }
+
+    #nav-toggle:checked ~ .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100px;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(248, 178, 178, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    }
+
+    #nav-toggle:checked ~ .nav-menu > li {
+        margin-bottom: 30px;
+    }
+
+    #nav-toggle:checked ~ .nav-toggle::before {
+        display: none;
+    }
+
+    #nav-toggle:checked ~ .nav-toggle::after {
+        display: block;
+    }
+
+    .for-team .container {
+        flex-wrap: wrap;
+    }
+
+    .for-item {
+        width: 300px;
+    }
+
+    .for-item:nth-child(3) p {
+        margin-bottom: 35px;
+    }
+
+    .communicate .container {
+        background-position: right top;
+        background-size: 50%;
+    }
+
+    .comm-title {
+        margin-bottom: 70px;
+    }
+
+    .comm-text {
+        max-width: 85%;
+    }
+
+    .free-trial .container {
+        background-position: right top;
+        background-size: 28%;
+        justify-content: start;
+    }
+
+    .free-wrapper {
+        width: 100%;
+    }
+
+    .free-text {
+        width: 80%;
+    }
+
+}
+
+/*@media (max-width: 768px)*/    
+
+@media (max-width: 425px) {
+
+    .nav .def-but {
+        display: none;
+    }
+
+    .promo, .free-trial .container {
+        background-image: none;
+    }
+
+    .promo-title {
+        font-size: 60px;
+        line-height: 64px;
+    }
+
+    .audience .container {
+        grid-template-columns: 1fr;
+    }
+
+    .aud-header {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .communicate .container {
+        background-position: right bottom;
+        background-size: 35%;
+    }
+
+    .free-wrapper {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .free-text {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .free-wrapper2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .free-text {
+       width: 100%;
+    }
+
+    .free-wrapper2 input {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .foot-top .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .foot-wrapper {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .foot-wrapp2 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+
+    .foot-menu {
+        margin-left: 0;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .promo-title {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .promo-more {
+        margin-top: 20px;
+    }
+
+    .aud-title {
+        font-size: 42px;
+        line-height: 44px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .promo {
+        height: 800px;
+    }
+
+    .promo-title {
+       margin-bottom: 20px;
+    }
+
+    .promo-text {
+        margin-bottom: 20px;
+    }
+
+    .foot-wrapp2 a:first-child {
+        margin-bottom: 10px;
+    }
+
+    .foot-bottom .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .foot-bottom ul:first-child {
+        margin-bottom: 10px;
+    }
+
+}
+

@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+	width: 80%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+.tab {
+	width: 500px;
+	height: 200px;
+	border: 2px solid rgb(207, 202, 202);
+	border-radius: 5px;
+}
+
+.tab-buttons {
+	width: 95%;
+	display: flex;
+	border-bottom: 2px solid rgb(207, 202, 202);
+	margin-bottom: 50px;
+}
+
+.buts {
+	padding: 0 15px;
+	background-color: #fff;
+	border: 2px solid #fff;
+	border-right: 2px solid rgb(207, 202, 202);
+}
+
+.buts:hover {
+	border: 2px solid rgb(224, 38, 153);
+}
+
+.tab-item {
+	display: none;
+	width: 300px;
+	padding: 10px;
+}
+
+.tab-but1, .item1 {
+	color: rgb(9, 163, 112);
+}
+
+.tab-but2, .item2 {
+	color: rgb(223, 98, 26);
+}
+
+.tab-but3, .item3 {
+	color: rgb(76, 50, 224);
+}
+
+.show {
+	display: block;
+}
+
+.activ {
+	background-color: rgb(236, 243, 174);
+	font-weight: bold;
+}
